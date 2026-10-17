@@ -1,13 +1,80 @@
-body{
-    background: #101014;
-    color: white;
-    text-align: center;
-    padding: 50px;
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0c1020;
+  color: #f5f3ff;
+  line-height: 1.7;
 }
-h1{
-    color: #00e5ff;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  border-bottom: 1px solid #292944;
 }
-button{
-    background-color: rgb(11, 110, 128);
-    
+
+nav h2 { font-size: 28px; }
+nav a { color: #c5c1dc; margin-left: 18px; text-decoration: none; }
+
+span { color: #b69cff; }
+
+main {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 0 25px;
+}
+
+.tag {
+  color: #67e8f9;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1 { font-size: clamp(38px, 7vw, 64px); line-height: 1.2; }
+
+.intro { color: #b7bdd1; font-size: 18px; margin-bottom: 30px; }
+
+.button {
+  display: inline-block;
+  background: #b69cff;
+  color: #17112a;
+  padding: 11px 20px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 75px;
+  padding: 25px;
+  background: #151a30;
+  border: 1px solid #292944;
+  border-radius: 16px;
+}
+
+.skills { display: flex; flex-wrap: wrap; gap: 12px; }
+
+.skills div {
+  background: #25223f;
+  padding: 12px 18px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #a6abc0;
+  font-size: 13px;
+}
+
+a:hover { opacity: 0.8; }
+
+@media (max-width: 480px) {
+  nav { padding: 12px 5%; }
+  nav a { margin-left: 8px; }
+  main { margin-top: 55px; }
 }
