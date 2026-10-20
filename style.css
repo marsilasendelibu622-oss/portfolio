@@ -180,9 +180,38 @@ a:hover { opacity: 0.8; }
   padding: 7px 12px;
   font-size: 12px;
 }
-
 @media (max-width: 600px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
+}
+/* Day 4: Skills Section */
+#skills {
+    text-align: center;
+}
+
+#skills h2 {
+    margin-bottom: 25px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.skills div {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px 30px;
+    min-width: 120px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills div:hover {
+    transform: translateY(-5px);
+    background: rgba(150, 100, 255, 0.2);
 }
