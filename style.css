@@ -3,11 +3,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0c1020;
+  background-color: #0c1020;
+  background-image:
+    linear-gradient(rgba(8, 5, 20, 0.72), rgba(8, 5, 20, 0.82)),
+    url("ii.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #f5f3ff;
   line-height: 1.7;
-}
-
+} 
 nav {
   display: flex;
   justify-content: space-between;
@@ -214,4 +220,18 @@ a:hover { opacity: 0.8; }
 .skills div:hover {
     transform: translateY(-5px);
     background: rgba(150, 100, 255, 0.2);
+}
+/* Day 5: Pink Moon Theme */
+section {
+    background: rgba(15, 10, 30, 0.45);
+    border: 1px solid rgba(255, 105, 180, 0.18);
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    backdrop-filter: blur(3px);
+}
+
+h1, h2 {
+    color: #ffb6e6;
+    text-shadow: 0 0 12px rgba(255, 105, 180, 0.35);
 }
