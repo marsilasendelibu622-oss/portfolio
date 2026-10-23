@@ -235,3 +235,24 @@ h1, h2 {
     color: #ffb6e6;
     text-shadow: 0 0 12px rgba(255, 105, 180, 0.35);
 }
+
+/* Day 7: Mobile-friendly design */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .project-container,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
