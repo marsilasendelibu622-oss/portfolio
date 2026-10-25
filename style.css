@@ -6,7 +6,7 @@ body {
   background-color: #0c1020;
   background-image:
     linear-gradient(rgba(8, 5, 20, 0.72), rgba(8, 5, 20, 0.82)),
-    url("ii.jpg");
+    url("moon.jfif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -191,7 +191,6 @@ a:hover { opacity: 0.8; }
     grid-template-columns: 1fr;
   }
 }
-/* Day 4: Skills Section */
 #skills {
     text-align: center;
 }
@@ -254,5 +253,112 @@ h1, h2 {
     .project-container,
     .skills-container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Smooth animation for all pages */
+body {
+    animation: pageFade 1s ease-in-out;
+}
+
+/* Page fade-in effect */
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Navigation link animation */
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    color: #60a5fa;
+    background: rgba(96, 165, 250, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.2);
+}
+
+/* Smooth button animation */
+button,
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(255, 143, 207, 0.4);
+}
+
+/* Project card hover animation */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(96, 165, 250, 0.25);
+}
+/* Soft pink heading glow */
+/* Subtle professional heading glow */
+h1, h2 {
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.25);
+}
+/* Profile photo */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #60a5fa;
+    box-shadow: 0 0 18px rgba(96, 165, 250, 0.3);
+    display: block;
+    margin: 0 auto 20px;
+}/* Mobile-friendly portfolio */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-card {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
