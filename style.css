@@ -362,3 +362,28 @@ h1, h2 {
         box-sizing: border-box;
     }
 }
+/* Currently Learning section */
+.learning-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 30px auto;
+}
+
+.learning-card {
+    max-width: 550px;
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid rgba(96, 165, 250, 0.35);
+    border-radius: 12px;
+    background: rgba(96, 165, 250, 0.08);
+    transition: 0.3s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.learning-card h3 {
+    color: #60a5fa;
+}
